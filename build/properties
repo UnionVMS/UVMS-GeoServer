@@ -1,0 +1,56 @@
+
+# as environment variables
+
+# constants
+GT_GIT_URL=git://github.com/geotools/geotools.git
+GWC_GIT_URL=git://github.com/GeoWebCache/geowebcache.git
+JIRA_REST=https://osgeo-org.atlassian.net/rest/api/latest
+JIRA_PROJ=GEOS
+WIN_JENKINS=http://162.209.53.106:8080
+WIN_JENKINS_USER=build
+WIN_JENKINS_KEY=c7df8777ad146449f39272c596e963e4
+MAC_JENKINS=http://208.52.190.11:8080
+MAC_JENKINS_USER=build
+MAC_JENKINS_KEY=7babda1c4cf05ee099baa3d4c6579dab
+SF_HOST=frs.sourceforge.net
+
+# parameter defaults
+if [ -z $branch ]; then
+  branch="trunk"
+fi
+
+if [ -z $rev ]; then
+  rev="HEAD"
+fi
+
+if [ -z $DIST_PATH ]; then
+  DIST_PATH=/var/www/geoserver/release
+fi
+
+if [ -z $DIST_HOST ]; then
+  DIST_HOST=ares.boundlessgeo.com
+fi
+
+if [ -z $DIST_URL ]; then
+  DIST_URL=http://$DIST_HOST/geoserver/release
+fi
+
+if [ -z $DIST_PORT ]; then
+  DIST_PORT=7777
+fi
+
+if [ -z $DIST_USER ]; then
+  DIST_USER=jenkins
+fi
+
+if [ -z $DIST_PK ]; then
+  DIST_PK=$HOME/.ssh/id_rsa_${DIST_USER}_${DIST_HOST}
+fi
+
+if [ -z $SF_USER ]; then
+  SF_USER=jdeolive
+fi
+
+if [ -z $SF_PK ]; then
+  SF_PK=$HOME/.ssh/id_dsa_${SF_USER}_frs.sourceforge.net
+fi
