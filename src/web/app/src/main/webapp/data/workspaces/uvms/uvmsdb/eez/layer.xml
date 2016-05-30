@@ -1,0 +1,23 @@
+<layer>
+  <name>eez</name>
+  <id>LayerInfoImpl-77efb051:14e878e13c4:-7ffc</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--47cf69f5:14e8786349a:-7ffd</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-77efb051:14e878e13c4:-7ff9</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-5b9be89c:14efe51766e:-7ff8</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-77efb051:14e878e13c4:-7ffd</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

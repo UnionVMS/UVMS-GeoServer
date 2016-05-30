@@ -1,0 +1,23 @@
+<layer>
+  <name>port_area</name>
+  <id>LayerInfoImpl--3fe7cb84:153137cb2af:-7ffa</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-2f63eeb5:15254f5fe37:-7fb6</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl--3fe7cb84:153137cb2af:-7ff2</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-2f63eeb5:15254f5fe37:-7fb2</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--3fe7cb84:153137cb2af:-7ffb</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

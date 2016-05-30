@@ -1,0 +1,23 @@
+<layer>
+  <name>gfcm</name>
+  <id>LayerInfoImpl-23cd0646:154763c3ac4:-2700</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-23cd0646:154763c3ac4:-26fc</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-23cd0646:154763c3ac4:-26fa</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-23cd0646:154763c3ac4:-26fb</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-23cd0646:154763c3ac4:-2701</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>
