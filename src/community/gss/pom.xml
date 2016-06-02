@@ -1,7 +1,7 @@
 <project>
    <modelVersion>4.0.0</modelVersion>
    <parent>
-      <groupId>org.geoserver</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
       <artifactId>community</artifactId>
       <version>2.8.3</version>
    </parent>
@@ -13,12 +13,12 @@
 
    <dependencies>
       <dependency>
-         <groupId>org.geoserver</groupId>
+         <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
          <artifactId>gs-wfsv</artifactId>
          <version>${project.version}</version>
       </dependency>
       <dependency>
-         <groupId>org.geoserver</groupId>
+         <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
          <artifactId>gs-main</artifactId>
          <version>${gs.version}</version>
          <scope>provided</scope>
@@ -28,7 +28,7 @@
          <artifactId>commons-httpclient</artifactId>
       </dependency>
       <dependency>
-         <groupId>org.geoserver</groupId>
+         <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
          <artifactId>gs-main</artifactId>
          <classifier>tests</classifier>
          <scope>test</scope>

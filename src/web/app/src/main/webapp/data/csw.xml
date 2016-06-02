@@ -22,6 +22,5 @@ This is a description of your Catalog Services For The Web.
   <citeCompliant>false</citeCompliant>
   <onlineResource>http://geoserver.org</onlineResource>
   <schemaBaseURL>http://schemas.opengis.net</schemaBaseURL>
-  <verbose>false</verbose>
-  <canonicalSchemaLocation>false</canonicalSchemaLocation>
+  <verbose>false</verbose>  
 </csw>

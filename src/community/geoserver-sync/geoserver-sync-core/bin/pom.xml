@@ -50,14 +50,14 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.geoserver</groupId>
+            <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
             <artifactId>wfs</artifactId>
             <version>${geoserver.version}</version>
             <classifier>tests</classifier>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.geoserver</groupId>
+            <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
             <artifactId>main</artifactId>
             <version>${geoserver.version}</version>
             <classifier>tests</classifier>

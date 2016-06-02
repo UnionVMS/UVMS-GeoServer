@@ -24,13 +24,13 @@
 
     <dependencies>
     <dependency>
-      <groupId>org.geoserver</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
       <artifactId>gs-wfs</artifactId>
 	  <version>${project.version}</version>
        
     </dependency>	
     <dependency>
-      <groupId>org.geoserver</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
       <artifactId>gs-wfs</artifactId>
 	   <version>${project.version}</version>
        <classifier>tests</classifier>
@@ -38,7 +38,7 @@
     </dependency>	
    
     <dependency>
-      <groupId>org.geoserver</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
       <artifactId>gs-main</artifactId>
       <version>${project.version}</version>
       <classifier>tests</classifier>

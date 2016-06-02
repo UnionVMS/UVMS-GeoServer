@@ -9,12 +9,12 @@
  <modelVersion>4.0.0</modelVersion>
 
  <parent>
-  <groupId>org.geoserver</groupId>
+  <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
   <artifactId>geoserver</artifactId>
   <version>2.8.3</version>
  </parent>
 
- <groupId>org.geoserver</groupId>
+ <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
  <artifactId>gs-platform</artifactId>
  <packaging>jar</packaging>
  <name>Core Platform Module</name>

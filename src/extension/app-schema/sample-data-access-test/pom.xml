@@ -21,11 +21,11 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.geoserver</groupId>
+			<groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
 			<artifactId>gs-main</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.geoserver</groupId>
+			<groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
 			<artifactId>gs-main</artifactId>
 			<classifier>tests</classifier>
 		</dependency>
@@ -34,7 +34,7 @@
 				wfs required to get applicationContext.xml. Without it, code will
 				compile but will not run.
 			-->
-			<groupId>org.geoserver</groupId>
+			<groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
 			<artifactId>gs-wfs</artifactId>
 		</dependency>
 		<dependency>

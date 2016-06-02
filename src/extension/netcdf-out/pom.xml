@@ -20,7 +20,7 @@
     </repository>
    </repositories>
   <parent>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>extension</artifactId>
     <version>2.8.3</version>
   </parent>
@@ -32,7 +32,7 @@
  
  <dependencies>
   <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-main</artifactId>
   </dependency>
   <dependency>
@@ -40,17 +40,17 @@
     <artifactId>gs-web-core</artifactId>
   </dependency>
   <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-main</artifactId>
     <classifier>tests</classifier>
     <scope>test</scope>
   </dependency>
   <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-wcs</artifactId>
   </dependency>
   <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-ows</artifactId>
     <scope>test</scope>
   </dependency>
@@ -62,7 +62,7 @@
     <version>${project.version}</version>
   </dependency>
   <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-wcs1_1</artifactId>
     <scope>test</scope>
   </dependency>
@@ -75,7 +75,7 @@
     <artifactId>gt-xsd-wcs</artifactId>
   </dependency>
    <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-wcs2_0</artifactId>
   </dependency>
   <dependency>
@@ -84,7 +84,7 @@
 	<version>${project.version}</version>
   </dependency>
   <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-wcs2_0</artifactId>
     <classifier>tests</classifier>
     <scope>test</scope>

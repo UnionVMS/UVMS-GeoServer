@@ -10,16 +10,14 @@
   http://maven.apache.org/maven-v4_0_0.xsd">
 
  <modelVersion>4.0.0</modelVersion>
- <groupId>org.geoserver</groupId>
+ <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
  <artifactId>geoserver</artifactId>
  <packaging>pom</packaging>
  <version>2.8.3</version>
  <name>GeoServer</name>
 
  <scm>
-  <connection>scm:git:git://github.com/geoserver/geoserver.git</connection>
-  <developerConnection>scm:git:[fetch=]git://github.com/geoserver/geoserver.git[push=]git@github.com:geoserver/geoserver.git</developerConnection>
-  <url>https://github.com/geoserver/geoserver</url>
+  <developerConnection>scm:svn:https://webgate.ec.europa.eu/CITnet/svn/UNIONVMS/trunk/geoserver/</developerConnection>
  </scm>
 
  <organization>
@@ -35,20 +33,7 @@
   </license>
  </licenses>
 
- <ciManagement>
-    <system>hudson</system>
-    <url>http://hudson.opengeo.org/hudson/</url>
-    <notifiers>
-      <notifier>
-        <type>mail</type>
-        <configuration>
-           <address>geoserver-devel@lists.sourceforge.net</address>
-        </configuration>
-        <sendOnError>true</sendOnError>
-        <sendOnFailure>true</sendOnFailure>
-      </notifier>
-    </notifiers>
- </ciManagement>
+
 
  <repositories>
   <repository>
@@ -98,82 +83,82 @@
  <dependencyManagement>
   <dependencies>
    <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-platform</artifactId>
     <version>${gs.version}</version>
    </dependency>
    <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-platform</artifactId>
     <version>${gs.version}</version>
     <classifier>tests</classifier>
    </dependency>
    <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-ows</artifactId>
     <version>${gs.version}</version>
    </dependency>
    <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-ows</artifactId>
     <version>${gs.version}</version>
     <classifier>tests</classifier>
    </dependency>
    <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-main</artifactId>
     <version>${gs.version}</version>
    </dependency>
    <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-main</artifactId>
     <version>${gs.version}</version>
     <classifier>tests</classifier>
    </dependency>
    <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-wcs</artifactId>
     <version>${gs.version}</version>
    </dependency>
    <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-wcs1_0</artifactId>
     <version>${gs.version}</version>
    </dependency>
    <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-wcs1_1</artifactId>
     <version>${gs.version}</version>
    </dependency>
    <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-wcs2_0</artifactId>
     <version>${gs.version}</version>
    </dependency>
    <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-wcs2_0</artifactId>
     <version>${gs.version}</version>
     <classifier>tests</classifier>
    </dependency>
    <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-wfs</artifactId>
     <version>${gs.version}</version>
    </dependency>
    <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-wms</artifactId>
     <version>${gs.version}</version>
    </dependency>
    <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-wms</artifactId>
     <version>${gs.version}</version>
     <classifier>tests</classifier>
    </dependency>
    <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-gwc</artifactId>
     <version>${gs.version}</version>
     <exclusions>
@@ -184,7 +169,7 @@
     </exclusions>
    </dependency>
    <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-rest</artifactId>
     <version>${gs.version}</version>
    </dependency>
@@ -599,7 +584,7 @@
    <dependency>
      <groupId>com.oracle</groupId>
      <artifactId>ojdbc7</artifactId>
-     <version>12.1.0.2</version>
+     <version>12.1.0.2.0</version>
    </dependency>
 
    <dependency>
@@ -1602,16 +1587,14 @@
 
  <distributionManagement>
   <repository>
-   <id>boundless</id>
-   <name>Boundless Release Repository</name>
-   <url>https://repo.boundlessgeo.com/release/</url>
-   <uniqueVersion>false</uniqueVersion>
+   <id>digit-releases</id>
+   <name>DG DIGIT Repository</name>
+   <url>https://webgate.ec.europa.eu/CITnet/nexus/content/repositories/mare/</url>
   </repository>
   <snapshotRepository>
-   <id>boundless</id>
-   <uniqueVersion>false</uniqueVersion>
-   <name>Boundless Snapshot Repository</name>
-   <url>https://repo.boundlessgeo.com/snapshot/</url>
+   <id>digit-snapshots</id>
+   <name>DG DIGIT Snapshot Repository</name>
+   <url>https://webgate.ec.europa.eu/CITnet/nexus/content/repositories/mare-snapshots/</url>
   </snapshotRepository>
  </distributionManagement>
 

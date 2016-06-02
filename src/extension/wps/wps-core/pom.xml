@@ -23,22 +23,22 @@
     
     <dependencies>
         <dependency>
-            <groupId>org.geoserver</groupId>
+            <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
             <artifactId>gs-wfs</artifactId>
             <version>${gs.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.geoserver</groupId>
+            <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
             <artifactId>gs-wcs2_0</artifactId>
             <version>${gs.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.geoserver</groupId>
+            <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
             <artifactId>gs-wcs1_1</artifactId>
             <version>${gs.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.geoserver</groupId>
+            <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
             <artifactId>gs-wcs1_0</artifactId>
             <version>${gs.version}</version>
         </dependency>
@@ -124,14 +124,14 @@
           <scope>test</scope>
         </dependency>    
         <dependency>
-           <groupId>org.geoserver</groupId>
+           <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
            <artifactId>gs-main</artifactId>
            <version>${gs.version}</version>
            <classifier>tests</classifier>
            <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.geoserver</groupId>
+            <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
             <artifactId>gs-wcs2_0</artifactId>
             <version>${gs.version}</version>
            <classifier>tests</classifier>

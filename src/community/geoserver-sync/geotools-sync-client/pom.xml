@@ -90,31 +90,31 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.geoserver</groupId>
+            <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
             <artifactId>gs-main</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.geoserver</groupId>
+            <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
             <artifactId>gs-main</artifactId>
             <version>${project.version}</version>
             <classifier>tests</classifier>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.geoserver</groupId>
+            <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
             <artifactId>gs-wfs</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.geoserver</groupId>
+            <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
             <artifactId>gs-wfs</artifactId>
             <version>${project.version}</version>
             <classifier>tests</classifier>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.geoserver</groupId>
+            <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
             <artifactId>gs-ows</artifactId>
             <scope>test</scope>
         </dependency>

@@ -1,10 +1,12 @@
 <wcs>
   <id>wcs</id>
-  <enabled>false</enabled>
-  <name>WCS</name>
-  <title>Web Coverage Service</title>
+  <enabled>true</enabled>
+  <name>My GeoServer WCS</name>
+  <title>My GeoServer WCS</title>
   <maintainer>http://geoserver.org/comm</maintainer>
-  <abstrct>This server implements the WCS specification 1.0 and 1.1.1, it&apos;s reference implementation of WCS 1.1.1. All layers published by this service are available on WMS also.</abstrct>
+  <abstrct>
+This is a description of your Web Coverage Server.
+     </abstrct>
   <accessConstraints>NONE</accessConstraints>
   <fees>NONE</fees>
   <versions>
@@ -13,9 +15,6 @@
     </org.geotools.util.Version>
     <org.geotools.util.Version>
       <version>1.1.1</version>
-    </org.geotools.util.Version>
-    <org.geotools.util.Version>
-      <version>2.0.1</version>
     </org.geotools.util.Version>
   </versions>
   <keywords>
@@ -29,11 +28,8 @@
     <metadataType>other</metadataType>
   </metadataLink>
   <citeCompliant>false</citeCompliant>
-  <onlineResource>http://geoserver.sourceforge.net/html/index.php</onlineResource>
+  <onlineResource>http://geoserver.org</onlineResource>
   <schemaBaseURL>http://schemas.opengis.net</schemaBaseURL>
   <verbose>false</verbose>
   <gmlPrefixing>false</gmlPrefixing>
-  <latLon>false</latLon>
-  <maxInputMemory>0</maxInputMemory>
-  <maxOutputMemory>0</maxOutputMemory>
 </wcs>

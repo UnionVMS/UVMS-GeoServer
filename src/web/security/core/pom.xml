@@ -23,7 +23,7 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.geoserver</groupId>
+			<groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
 			<artifactId>gs-wms</artifactId>
 			<version>${project.version}</version>
 		</dependency>
@@ -48,7 +48,7 @@
             <artifactId>spring-security-web</artifactId>
         </dependency>
 		<dependency>
-			<groupId>org.geoserver</groupId>
+			<groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
 			<artifactId>gs-main</artifactId>
 			<version>${project.version}</version>
 			<classifier>tests</classifier>

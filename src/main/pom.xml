@@ -9,29 +9,29 @@
  <modelVersion>4.0.0</modelVersion>
  
  <parent>
-  <groupId>org.geoserver</groupId>
+  <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
   <artifactId>geoserver</artifactId>
   <version>2.8.3</version>
  </parent>
  
- <groupId>org.geoserver</groupId>
+ <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
  <artifactId>gs-main</artifactId>
  <packaging>jar</packaging>
  <name>Main Module</name>
  
  <dependencies>
   <dependency>
-   <groupId>org.geoserver</groupId>
+   <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
    <artifactId>gs-ows</artifactId>
   </dependency>
   <dependency>
-   <groupId>org.geoserver</groupId>
+   <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
    <artifactId>gs-ows</artifactId>
    <classifier>tests</classifier>
    <scope>test</scope>
   </dependency>
   <dependency>
-   <groupId>org.geoserver</groupId>
+   <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
    <artifactId>gs-platform</artifactId>
    <classifier>tests</classifier>
    <scope>test</scope>
@@ -190,7 +190,7 @@
    <scope>test</scope>
   </dependency>
   <dependency>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-platform</artifactId>
   </dependency>
   <dependency>

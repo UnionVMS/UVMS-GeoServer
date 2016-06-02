@@ -9,7 +9,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>community</artifactId>
-    <groupId>org.geoserver</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <version>2.8.3</version>
   </parent>
   <groupId>org.geoserver.community</groupId>
@@ -36,7 +36,7 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.geoserver</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
       <artifactId>gs-main</artifactId>
       <version>2.8.3</version>
       <classifier>tests</classifier>
