@@ -7,19 +7,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.geoserver.community</groupId>
+        <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
         <artifactId>gs-gdal</artifactId>
         <version>2.8.3</version>
     </parent>
 
-    <groupId>org.geoserver.community</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
     <artifactId>gs-gdal-wcs</artifactId>
     <packaging>jar</packaging>
     <name>GDAL translate WCS</name>
 
     <dependencies>
         <dependency>
-            <groupId>org.geoserver.extension</groupId>
+            <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
             <artifactId>gs-ogr-core</artifactId>
             <version>${gs.version}</version>
         </dependency>

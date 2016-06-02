@@ -10,7 +10,7 @@
         <version>2.8.3</version>
     </parent>
 
-    <groupId>org.geoserver.community</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
     <artifactId>gs-geofence-server</artifactId>
     <packaging>jar</packaging>
     <version>2.8.3</version>
@@ -90,24 +90,24 @@
         </dependency>
         
         <dependency>
-            <groupId>org.geoserver.web</groupId>
+            <groupId>eu.europa.ec.fisheries.uvms.geoserver.web</groupId>
             <artifactId>gs-web-core</artifactId>
             <version>${project.version}</version>
         </dependency>
 
         <dependency>
-            <groupId>org.geoserver.geofence</groupId>
+            <groupId>eu.europa.ec.fisheries.uvms.geoserver.geofence</groupId>
             <artifactId>geofence-services-impl</artifactId>
             <version>${gf.version}</version>
         </dependency>
         
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-geofence</artifactId>
           <version>${project.version}</version>
           <exclusions>
             <exclusion>
-              <groupId>org.geoserver.geofence</groupId>
+              <groupId>eu.europa.ec.fisheries.uvms.geoserver.geofence</groupId>
               <artifactId>geofence-model</artifactId>
             </exclusion>
           </exclusions>
@@ -150,7 +150,7 @@
         </dependency>
         
         <dependency>
-            <groupId>org.geoserver.web</groupId>
+            <groupId>eu.europa.ec.fisheries.uvms.geoserver.web</groupId>
             <artifactId>gs-web-core</artifactId>
             <version>${project.version}</version>
             <classifier>tests</classifier>
@@ -158,7 +158,7 @@
         </dependency>
         
         <dependency>
-            <groupId>org.geoserver.community</groupId>
+            <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
             <artifactId>gs-geofence</artifactId>
             <version>${project.version}</version>
             <classifier>tests</classifier> 

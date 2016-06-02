@@ -15,14 +15,14 @@
 	<version>2.8.3</version>
   </parent>
 
-  <groupId>org.geoserver.csw</groupId>
+  <groupId>eu.europa.ec.fisheries.uvms.geoserver.csw</groupId>
   <artifactId>gs-csw-core</artifactId>
   <packaging>jar</packaging>
   <name>Catalog Services for the Web core module</name>
 
   <dependencies>
     <dependency>
-      <groupId>org.geoserver.csw</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver.csw</groupId>
       <artifactId>gs-csw-api</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -39,7 +39,7 @@
        <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.geoserver.csw</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver.csw</groupId>
       <artifactId>gs-csw-simple-store</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>

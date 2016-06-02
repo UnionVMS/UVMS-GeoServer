@@ -7,7 +7,7 @@
   </parent>
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.geoserver.extension</groupId>
+  <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
   <artifactId>gs-charts</artifactId>
   <packaging>jar</packaging>
   <name>Chart external graphics support</name>

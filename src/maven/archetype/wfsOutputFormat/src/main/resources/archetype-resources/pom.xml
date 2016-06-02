@@ -1,6 +1,6 @@
 <project>
  <modelVersion>4.0.0</modelVersion>
- <groupId>org.geoserver.community</groupId>
+ <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
  <artifactId>${artifactId}</artifactId>
  <packaging>jar</packaging>
  <version>${version}</version>

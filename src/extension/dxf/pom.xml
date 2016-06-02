@@ -16,7 +16,7 @@
     <version>2.8.3</version>
   </parent>
 
-  <groupId>org.geoserver.extension</groupId>
+  <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
   <artifactId>gs-dxf</artifactId>
   <packaging>pom</packaging>
   <version>2.8.3</version>

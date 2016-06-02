@@ -14,19 +14,19 @@
       <version>2.8.3</version>
    </parent>
 
-   <groupId>org.geoserver.community</groupId>
+   <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
    <artifactId>gs-pgraster</artifactId>
    <packaging>jar</packaging>
    <name>PGRaster DataStore Extension for automatic configuration</name>
 
    <dependencies>
       <dependency>
-         <groupId>org.geoserver.web</groupId>
+         <groupId>eu.europa.ec.fisheries.uvms.geoserver.web</groupId>
          <artifactId>gs-web-core</artifactId>
          <version>${project.version}</version>
       </dependency>
       <dependency>
-         <groupId>org.geoserver.web</groupId>
+         <groupId>eu.europa.ec.fisheries.uvms.geoserver.web</groupId>
          <artifactId>gs-web-core</artifactId>
          <version>${project.version}</version>
          <classifier>tests</classifier>

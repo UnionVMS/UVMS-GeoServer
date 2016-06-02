@@ -15,7 +15,7 @@
     <version>2.8.3</version>
   </parent>
 
-  <groupId>org.geoserver.csw</groupId>
+  <groupId>eu.europa.ec.fisheries.uvms.geoserver.csw</groupId>
   <artifactId>gs-web-csw</artifactId>
   <packaging>jar</packaging>
   <version>2.8.3</version>
@@ -23,22 +23,22 @@
   
   <dependencies>
     <dependency>
-      <groupId>org.geoserver.csw</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver.csw</groupId>
       <artifactId>gs-csw-api</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.geoserver.csw</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver.csw</groupId>
       <artifactId>gs-csw-core</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.geoserver.web</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver.web</groupId>
       <artifactId>gs-web-core</artifactId>
       <version>${project.version}</version>
     </dependency>
      <dependency>
-      <groupId>org.geoserver.web</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver.web</groupId>
       <artifactId>gs-web-core</artifactId>
       <version>${project.version}</version>
       <classifier>tests</classifier>

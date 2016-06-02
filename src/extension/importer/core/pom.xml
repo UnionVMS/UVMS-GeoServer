@@ -10,7 +10,7 @@
     <version>2.8.3</version>
   </parent>
 
-  <groupId>org.geoserver.importer</groupId>
+  <groupId>eu.europa.ec.fisheries.uvms.geoserver.importer</groupId>
   <artifactId>gs-importer-core</artifactId>
   <packaging>jar</packaging>
   <name>Importer Core Module</name>

@@ -12,54 +12,54 @@
     <artifactId>web</artifactId>
     <version>2.8.3</version>
   </parent>
-  <groupId>org.geoserver.web</groupId>
+  <groupId>eu.europa.ec.fisheries.uvms.geoserver.web</groupId>
   <artifactId>gs-web-app</artifactId>
   <packaging>jar</packaging>
   <version>2.8.3</version>
   <name>GeoServer Web Application</name>    
   <dependencies>  
     <dependency>
-      <groupId>org.geoserver.web</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver.web</groupId>
       <artifactId>gs-web-core</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.geoserver.web</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver.web</groupId>
       <artifactId>gs-web-wms</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.geoserver.web</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver.web</groupId>
       <artifactId>gs-web-gwc</artifactId>
       <version>${project.version}</version>
     </dependency>
         <dependency>
-      <groupId>org.geoserver.web</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver.web</groupId>
       <artifactId>gs-web-wfs</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.geoserver.web</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver.web</groupId>
       <artifactId>gs-web-wcs</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.geoserver.web</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver.web</groupId>
       <artifactId>gs-web-demo</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.geoserver.web</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver.web</groupId>
       <artifactId>gs-web-sec-jdbc</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.geoserver.web</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver.web</groupId>
       <artifactId>gs-web-sec-ldap</artifactId>
       <version>${project.version}</version>
     </dependency>
 	<dependency>
-      <groupId>org.geoserver.web</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver.web</groupId>
       <artifactId>gs-web-rest</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -124,12 +124,12 @@
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.geoserver.security</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver.security</groupId>
       <artifactId>gs-sec-jdbc</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.geoserver.security</groupId>
+      <groupId>eu.europa.ec.fisheries.uvms.geoserver.security</groupId>
       <artifactId>gs-sec-ldap</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -237,7 +237,7 @@
         </executions>
       </plugin>
       <!--plugin>
-        <groupId>org.geoserver.maven</groupId>
+        <groupId>eu.europa.ec.fisheries.uvms.geoserver.maven</groupId>
         <artifactId>gs-config</artifactId>
         <version>${project.version}</version>
         <executions>
@@ -374,7 +374,7 @@
       <id>arcsde</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-arcsde</artifactId>
           <version>2.8.3</version>
         </dependency>
@@ -403,7 +403,7 @@
       <id>sqlserver</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-sqlserver</artifactId>
           <version>2.8.3</version>
         </dependency>
@@ -413,7 +413,7 @@
       <id>oracle</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-oracle</artifactId>
           <version>2.8.3</version>
         </dependency>
@@ -423,9 +423,9 @@
       <id>oracleDriver</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-oracle</artifactId>
-          <version>2.9-SNAPSHOT</version>
+          <version>2.8.3</version>
         </dependency>
         <dependency>
             <groupId>com.oracle</groupId>
@@ -437,7 +437,7 @@
       <id>mysql</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-mysql</artifactId>
           <version>2.8.3</version>
         </dependency>
@@ -462,7 +462,7 @@
      <id>h2</id>
      <dependencies>
       <dependency>
-       <groupId>org.geoserver.extension</groupId>
+       <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
        <artifactId>gs-h2</artifactId>
        <version>${project.version}</version>
       </dependency>
@@ -472,7 +472,7 @@
      <id>validation</id>
      <dependencies>
       <dependency>
-        <groupId>org.geoserver.community</groupId>
+        <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
         <artifactId>gs-validation</artifactId>
         <version>${project.version}</version>
       </dependency>
@@ -492,7 +492,7 @@
       <id>programming-guide</id>
       <dependencies>
         <dependency>
-            <groupId>org.geoserver.community</groupId>
+            <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
             <artifactId>gs-programming-guide</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -502,7 +502,7 @@
       <id>geosearch</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-geosearch</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -512,7 +512,7 @@
       <id>imagemosaic-jdbc</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-imagemosaic-jdbc</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -522,7 +522,7 @@
       <id>feature-pregeneralized</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-feature-pregeneralized</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -532,7 +532,7 @@
       <id>printing</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-printing</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -542,7 +542,7 @@
       <id>scriptlet</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-scriptlet</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -552,7 +552,7 @@
       <id>dds</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-dds</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -562,12 +562,12 @@
       <id>dxf</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-dxf-core</artifactId>
           <version>${project.version}</version>
         </dependency>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-dxf-wps</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -577,7 +577,7 @@
       <id>istyler</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-istyler</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -587,7 +587,7 @@
       <id>proxy</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-proxy</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -597,7 +597,7 @@
       <id>control-flow</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-control-flow</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -607,7 +607,7 @@
       <id>python</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-python</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -627,7 +627,7 @@
       <id>charts</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-charts</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -637,12 +637,12 @@
       <id>wps</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-wps-core</artifactId>
           <version>${project.version}</version>
         </dependency>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-web-wps</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -652,7 +652,7 @@
       <id>wps-cluster-hazelcast</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-wps-cluster-hazelcast</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -662,7 +662,7 @@
       <id>css</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-css</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -672,7 +672,7 @@
       <id>gss</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-gss</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -682,7 +682,7 @@
       <id>ftp</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-ftp</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -695,7 +695,7 @@
       </activation>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-monitor-core</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -708,7 +708,7 @@
       </activation>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-monitor-hibernate</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -718,7 +718,7 @@
       <id>ogr</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-ogr-wfs</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -728,7 +728,7 @@
       <id>ogr-wps</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-ogr-wps</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -738,7 +738,7 @@
       <id>dbconfig</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-dbconfig</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -748,7 +748,7 @@
       <id>spatialite</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-spatialite</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -758,7 +758,7 @@
       <id>sextante</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-wps-sextante</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -768,7 +768,7 @@
       <id>inspire</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-inspire</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -778,7 +778,7 @@
       <id>querylayer</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-querylayer</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -788,7 +788,7 @@
       <id>jp2k</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-jp2k</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -798,7 +798,7 @@
       <id>gdal</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-gdal</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -808,7 +808,7 @@
       <id>sfs</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-simpleFeatureService</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -828,7 +828,7 @@
       <id>teradata</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-teradata</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -838,12 +838,12 @@
       <id>cas</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.security</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.security</groupId>
           <artifactId>gs-sec-cas</artifactId>
           <version>${project.version}</version>
         </dependency>
         <dependency>
-          <groupId>org.geoserver.security</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.security</groupId>
           <artifactId>gs-web-sec-cas</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -863,7 +863,7 @@
       <id>feature-aggregate</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-feature-aggregate</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -873,7 +873,7 @@
       <id>authkey</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-authkey</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -893,12 +893,12 @@
       <id>csw</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.csw</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.csw</groupId>
           <artifactId>gs-csw-core</artifactId>
           <version>${project.version}</version>
         </dependency>
 	<dependency>
-          <groupId>org.geoserver.csw</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.csw</groupId>
           <artifactId>gs-web-csw</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -908,7 +908,7 @@
       <id>csw-simple</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.csw</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.csw</groupId>
           <artifactId>gs-csw-simple-store</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -918,7 +918,7 @@
       <id>jdbcconfig</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-jdbcconfig</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -931,7 +931,7 @@
       </activation>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.script</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.script</groupId>
           <artifactId>gs-script-py</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -944,7 +944,7 @@
       </activation>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.script</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.script</groupId>
           <artifactId>gs-script-js</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -957,7 +957,7 @@
       </activation>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.script</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.script</groupId>
           <artifactId>gs-script-bsh</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -970,7 +970,7 @@
       </activation>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.script</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.script</groupId>
           <artifactId>gs-script-rb</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -983,7 +983,7 @@
       </activation>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.script</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.script</groupId>
           <artifactId>gs-script-groovy</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -996,7 +996,7 @@
       </activation>
       <dependencies>
           <dependency>
-              <groupId>org.geoserver.script</groupId>
+              <groupId>eu.europa.ec.fisheries.uvms.geoserver.script</groupId>
               <artifactId>gs-script-web</artifactId>
               <version>${project.version}</version>
           </dependency>
@@ -1022,7 +1022,7 @@
       </activation>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-wms-eo</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -1032,12 +1032,12 @@
       <id>wcs2_0-eo</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-wcs2_0-eo-core</artifactId>
           <version>${project.version}</version>
         </dependency>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-web-wcs2_0-eo</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -1048,7 +1048,7 @@
       <id>w3ds</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-w3ds</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -1058,7 +1058,7 @@
       <id>libjpeg-turbo</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-libjpeg-turbo</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -1068,7 +1068,7 @@
       <id>netcdf</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-netcdf</artifactId>
           <version>${gs.version}</version>
         </dependency>
@@ -1078,12 +1078,12 @@
       <id>importer</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.importer</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.importer</groupId>
           <artifactId>gs-importer-web</artifactId>
           <version>${project.version}</version>
         </dependency>
         <dependency>
-          <groupId>org.geoserver.importer</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.importer</groupId>
           <artifactId>gs-importer-rest</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -1093,7 +1093,7 @@
       <id>netcdf-out</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-netcdf-out</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -1103,7 +1103,7 @@
       <id>pgraster</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.extension</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
           <artifactId>gs-pgraster</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -1113,7 +1113,7 @@
       <id>geopkg</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-geopkg</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -1123,7 +1123,7 @@
       <id>wfs-notification</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-wfs-notification-plugin</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -1133,7 +1133,7 @@
       <id>geoserver-sync</id>
       <dependencies>
         <dependency>
-	  <groupId>org.geoserver.community</groupId>
+	  <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>geoserver-sync-server</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -1143,7 +1143,7 @@
       <id>colormap</id>
       <dependencies>
        <dependency>
-         <groupId>org.geoserver.community</groupId>
+         <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
          <artifactId>gs-colormap</artifactId>
          <version>${project.version}</version>
        </dependency>
@@ -1153,7 +1153,7 @@
       <id>grib</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-grib</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -1163,7 +1163,7 @@
       <id>dyndimension</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-dyndimension</artifactId>
 		  <version>${project.version}</version>
         </dependency>
@@ -1173,7 +1173,7 @@
       <id>rest-ext</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-rest-ext</artifactId>
 		  <version>${project.version}</version>
         </dependency>
@@ -1183,7 +1183,7 @@
       <id>wps-download</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-wps-download</artifactId>
 		  <version>${project.version}</version>
         </dependency>
@@ -1193,7 +1193,7 @@
       <id>kmlppio</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-kmlppio</artifactId>
 		  <version>${project.version}</version>
         </dependency>
@@ -1203,7 +1203,7 @@
       <id>gpxppio</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-gpxppio</artifactId>
 		  <version>${project.version}</version>
         </dependency>
@@ -1213,7 +1213,7 @@
       <id>solr</id>
       <dependencies>
         <dependency>
-		  <groupId>org.geoserver.community</groupId>
+		  <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
 		  <artifactId>gs-web-solr</artifactId>
 		  <version>${project.version}</version>
         </dependency>
@@ -1223,12 +1223,12 @@
 	<id>jms-cluster</id>
 	<dependencies>
 		<dependency>
-			<groupId>org.geoserver.community</groupId>
+			<groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
 			<artifactId>gs-jms-commons</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.geoserver.community</groupId>
+			<groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
 			<artifactId>gs-jms-geoserver</artifactId>
 			<version>${project.version}</version>
 		</dependency>
@@ -1238,7 +1238,7 @@
       <id>geofence</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-geofence</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -1248,7 +1248,7 @@
       <id>sldService</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-sldservice</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -1258,7 +1258,7 @@
       <id>gwc-distributed</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-gwc-distributed</artifactId>
 	  <version>${project.version}</version>
         </dependency>
@@ -1268,7 +1268,7 @@
       <id>rest-upload</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-rest-upload</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -1278,7 +1278,7 @@
       <id>geomesa</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-web-geomesa</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -1288,7 +1288,7 @@
       <id>geofence-server</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-geofence-server</artifactId>
           <version>${project.version}</version>
         </dependency>              
@@ -1298,7 +1298,7 @@
       <id>vectortiles</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-vectortiles</artifactId>
           <version>${project.version}</version>
         </dependency>              
@@ -1308,7 +1308,7 @@
       <id>gdal-translate</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-gdal-wcs</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -1318,7 +1318,7 @@
       <id>gdal-translate-wps</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-gdal-wps</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -1328,7 +1328,7 @@
       <id>gwc-s3</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-gwc-s3</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -1338,7 +1338,7 @@
       <id>geogig</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-geogig</artifactId>
           <version>${project.version}</version>
         </dependency>
@@ -1348,7 +1348,7 @@
       <id>params-extractor</id>
       <dependencies>
         <dependency>
-          <groupId>org.geoserver.community</groupId>
+          <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
           <artifactId>gs-params-extractor</artifactId>
           <version>${project.version}</version>
         </dependency>

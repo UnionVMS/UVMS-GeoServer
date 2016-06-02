@@ -15,7 +15,7 @@
     <version>2.8.3</version>
   </parent>
 
-  <groupId>org.geoserver.csw</groupId>
+  <groupId>eu.europa.ec.fisheries.uvms.geoserver.csw</groupId>
   <artifactId>gs-csw-api</artifactId>
   <packaging>jar</packaging>
   <name>Catalog Services for the Web interfaces</name>

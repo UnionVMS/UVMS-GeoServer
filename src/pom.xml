@@ -174,7 +174,7 @@
     <version>${gs.version}</version>
    </dependency>
    <dependency>
-    <groupId>org.geoserver.web</groupId>
+    <groupId>eu.europa.ec.fisheries.uvms.geoserver.web</groupId>
     <artifactId>gs-web-core</artifactId>
     <version>${gs.version}</version>
    </dependency>
