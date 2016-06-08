@@ -1,0 +1,24 @@
+<dataStore>
+  <id>DataStoreInfoImpl-63ec84de:1550123b2e6:-7ffa</id>
+  <name>uvmsdb</name>
+  <description>Union VMS Spatial DB</description>
+  <type>PostGIS (JNDI)</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-63ec84de:1550123b2e6:-7ffd</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="dbtype">postgis</entry>
+    <entry key="encode functions">false</entry>
+    <entry key="jndiReferenceName">java:jboss/datasources/uvms_spatial</entry>
+    <entry key="Support on the fly geometry simplification">false</entry>
+    <entry key="namespace">http://unionvms.eu/uvms</entry>
+    <entry key="schema">spatial</entry>
+    <entry key="Loose bbox">true</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="fetch size">1000</entry>
+    <entry key="preparedStatements">false</entry>
+    <entry key="Estimated extends">true</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>
