@@ -305,6 +305,7 @@
 					<Iteration-Name>${iteration}</Iteration-Name>
 					<Build-Timestamp>${maven.build.timestamp}</Build-Timestamp>
 					<Git-Revision>${build.commit.id}</Git-Revision>
+					<Dependencies>com.oracle, org.jboss.ironjacamar.jdbcadapters</Dependencies>
 				</manifestEntries>
 			</archive>
 		</configuration>
