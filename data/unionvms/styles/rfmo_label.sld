@@ -9,6 +9,12 @@
             <sld:Title/>
 			<sld:FeatureTypeStyle>
 				<sld:Rule>
+					<ogc:Filter>
+						<ogc:PropertyIsEqualTo>
+							<ogc:PropertyName>enabled</ogc:PropertyName>
+							<ogc:Literal>Y</ogc:Literal>
+						</ogc:PropertyIsEqualTo>
+					</ogc:Filter>
 					<sld:TextSymbolizer>
 						<sld:Geometry>
 							<ogc:Function name="centroid">
