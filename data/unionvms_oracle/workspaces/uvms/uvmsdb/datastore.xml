@@ -1,0 +1,23 @@
+<dataStore>
+  <id>DataStoreInfoImpl--79589ca7:1569d281890:-7fd9</id>
+  <name>uvmsdb</name>
+  <description>Union VMS Spatial DB</description>
+  <type>Oracle NG (JNDI)</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl-63ec84de:1550123b2e6:-7ffd</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="dbtype">oracle</entry>
+    <entry key="Geometry metadata table">GEOMETRY_COLUMNS</entry>
+    <entry key="jndiReferenceName">java:jboss/datasources/uvms_spatial</entry>
+    <entry key="namespace">http://unionvms.eu/uvms</entry>
+    <entry key="schema">SPATIAL</entry>
+    <entry key="Loose bbox">true</entry>
+    <entry key="Expose primary keys">true</entry>
+    <entry key="fetch size">1000</entry>
+    <entry key="Estimated extends">true</entry>
+    <entry key="Metadata bbox">true</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

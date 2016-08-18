@@ -1,0 +1,23 @@
+<layer>
+  <name>FMZ</name>
+  <id>LayerInfoImpl--79589ca7:1569d281890:-7fd0</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-63ec84de:1550123b2e6:-7fef</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-63ec84de:1550123b2e6:-7fee</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-63ec84de:1550123b2e6:-7fed</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--79589ca7:1569d281890:-7fd1</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>
