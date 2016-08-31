@@ -13,7 +13,7 @@
     <version>2.8.3-SNAPSHOT</version>
   </parent>
   <groupId>eu.europa.ec.fisheries.uvms.geoserver.web</groupId>
-  <artifactId>gs-web-app</artifactId>
+  <artifactId>gs-web-app-${db.profile}</artifactId>
   <packaging>jar</packaging>
   <version>2.8.3-SNAPSHOT</version>
   <name>GeoServer Web Application</name>    
@@ -290,7 +290,7 @@
 		<artifactId>maven-war-plugin</artifactId>
         <version>2.3</version>
 		<configuration>
-			<warName>geoserver</warName>
+			<warName>geoserver-${db.profile}</warName>
 			<webappDirectory>${project.build.directory}/geoserver</webappDirectory>
 			<packagingExcludes>WEB-INF/lib/servlet-api*.jar</packagingExcludes>
 			<archive>
@@ -305,7 +305,6 @@
 					<Iteration-Name>${iteration}</Iteration-Name>
 					<Build-Timestamp>${maven.build.timestamp}</Build-Timestamp>
 					<Git-Revision>${build.commit.id}</Git-Revision>
-					<Dependencies>com.oracle, org.jboss.ironjacamar.jdbcadapters</Dependencies>
 				</manifestEntries>
 			</archive>
 		</configuration>
@@ -332,7 +331,7 @@
 				<configuration>
 					<artifacts>
 						<artifact>
-							<file>${project.build.directory}/geoserver.war</file>
+							<file>${project.build.directory}/geoserver-${db.profile}.war</file>
 							<type>war</type>
 						</artifact>
 					</artifacts>
@@ -344,12 +343,13 @@
   </build>
 
   <properties>
-    <configId>unionvms</configId>
     <configDirectory>${basedir}/../../../data</configDirectory>
     <webappSourceDirectory>${basedir}/src/main/webapp</webappSourceDirectory>
     <sde.version>9.3</sde.version>
     <jetty.port>8080</jetty.port>
     <jetty.run.daemon>false</jetty.run.daemon>
+    <db.profile>postgres</db.profile>
+    <configId>unionvms_${db.profile}</configId>
   </properties>
 
   <profiles>
@@ -412,6 +412,9 @@
     </profile>
     <profile>
       <id>oracle</id>
+      <properties>
+        <db.profile>oracle</db.profile>
+      </properties>
       <dependencies>
         <dependency>
           <groupId>eu.europa.ec.fisheries.uvms.geoserver.extension</groupId>
@@ -419,6 +422,36 @@
           <version>2.8.3-SNAPSHOT</version>
         </dependency>
       </dependencies>
+      <build>
+        <plugins>
+          <plugin>
+            <inherited>true</inherited>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>2.3</version>
+            <configuration>
+              <warName>geoserver-${db.profile}</warName>
+              <webappDirectory>${project.build.directory}/geoserver</webappDirectory>
+              <packagingExcludes>WEB-INF/lib/servlet-api*.jar</packagingExcludes>
+              <archive>
+                <manifest>
+                  <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                  <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                </manifest>
+                <manifestEntries>
+                  <GeoServerModule>core</GeoServerModule>
+                  <Application-Name>${project.build.finalname}</Application-Name>
+                  <Project-Version>${project.version}</Project-Version>
+                  <Iteration-Name>${iteration}</Iteration-Name>
+                  <Build-Timestamp>${maven.build.timestamp}</Build-Timestamp>
+                  <Git-Revision>${build.commit.id}</Git-Revision>
+                  <Dependencies>com.oracle, org.jboss.ironjacamar.jdbcadapters</Dependencies>
+                </manifestEntries>
+              </archive>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
     </profile>
     <profile>
       <id>oracleDriver</id>
