@@ -1,0 +1,23 @@
+<layer>
+  <name>fao</name>
+  <id>LayerInfoImpl-63ec84de:1550123b2e6:-7fd2</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-63ec84de:1550123b2e6:-7ff2</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl-63ec84de:1550123b2e6:-7ff0</id>
+    </style>
+    <style>
+      <id>StyleInfoImpl-63ec84de:1550123b2e6:-7ff1</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-63ec84de:1550123b2e6:-7fd3</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>
