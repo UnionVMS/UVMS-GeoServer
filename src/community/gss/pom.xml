@@ -3,12 +3,12 @@
    <parent>
       <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
       <artifactId>community</artifactId>
-      <version>2.8.3-SNAPSHOT</version>
+      <version>${gs.version}</version>
    </parent>
    <groupId>eu.europa.ec.fisheries.uvms.geoserver.community</groupId>
    <artifactId>gs-gss</artifactId>
    <packaging>jar</packaging>
-   <version>2.8.3-SNAPSHOT</version>
+   <version>${gs.version}</version>
    <name>GeoServer Synchronization Service</name>
 
    <dependencies>

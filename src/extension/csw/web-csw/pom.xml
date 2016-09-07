@@ -12,13 +12,13 @@
   <parent>
     <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>gs-csw</artifactId>
-    <version>2.8.3-SNAPSHOT</version>
+    <version>${gs.version}</version>
   </parent>
 
   <groupId>eu.europa.ec.fisheries.uvms.geoserver.csw</groupId>
   <artifactId>gs-web-csw</artifactId>
   <packaging>jar</packaging>
-  <version>2.8.3-SNAPSHOT</version>
+  <version>${gs.version}</version>
   <name>CSW UI Module</name>
   
   <dependencies>
