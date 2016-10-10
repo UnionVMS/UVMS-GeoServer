@@ -343,6 +343,7 @@
 
   <properties>
     <configDirectory>${basedir}/../../../data</configDirectory>
+    <containerConfDirectory>${basedir}/../../../container-conf/oracle</containerConfDirectory>
     <webappSourceDirectory>${basedir}/src/main/webapp</webappSourceDirectory>
     <sde.version>9.3</sde.version>
     <jetty.port>8080</jetty.port>
@@ -450,6 +451,34 @@
               </archive>
             </configuration>
           </plugin>
+		  
+		  <plugin>
+			<artifactId>maven-antrun-plugin</artifactId>
+			<version>1.7</version>
+			<executions>
+			  <execution>
+				<id>configPackage</id>
+				<phase>package</phase>
+				<configuration>
+				  <tasks>
+				  <!-- check if oracle is available, if not fail -->
+				  <available file="${containerConfDirectory}" property="oracleIsAvailable" />
+				  <fail message="Unable to locate configuration: ${containerConfDirectory}" unless="oracleIsAvailable" />
+
+				  <!-- copy the files from the config dir to the webapp dir -->
+				  <echo message="Copying data dir from ${containerConfDirectory}" />
+				  <copy todir="${webappSourceDirectory}/WEB-INF">
+					 <fileset dir="${containerConfDirectory}" includes="**/**" />
+				  </copy>
+				  </tasks>
+				</configuration>
+				<goals>
+				  <goal>run</goal>
+				</goals>
+			  </execution>
+			</executions>
+		  </plugin>	
+	  
         </plugins>
       </build>
     </profile>
