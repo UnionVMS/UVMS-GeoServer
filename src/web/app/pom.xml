@@ -206,15 +206,17 @@
             <phase>package</phase>
             <configuration>
               <tasks>
-  <!-- check if config is available, if not fail -->
-  <available file="${configDirectory}/${configId}" property="configIsAvailable" />
-  <fail message="Unable to locate configuration: ${configDirectory}/${configId}" unless="configIsAvailable" />
+			  <!-- check if config is available, if not fail -->
+			  <available file="${configDirectory}/${configId}" property="configIsAvailable" />
+			  <fail message="Unable to locate configuration: ${configDirectory}/${configId}" unless="configIsAvailable" />
 
-  <!-- copy the files from the config dir to the webapp dir -->
-  <echo message="Copying data dir from ${configDirectory}/${configId}" />
-  <copy todir="${webappSourceDirectory}/data">
-     <fileset dir="${configDirectory}/${configId}" includes="**/**" />
-  </copy>
+			  <!-- copy the files from the config dir to the webapp dir -->
+			  <echo message="Copying data dir from ${configDirectory}/${configId}" />
+			  <copy todir="${webappSourceDirectory}/data" >
+				 <fileset dir="${configDirectory}/${configId}" includes="**/**" />
+			  </copy>
+			  <replace file="${webappSourceDirectory}/data/workspaces/uvms/uvmsdb/datastore.xml" token="@jndiReferenceName@" value="${jndiReferenceName}"/> 
+  
               </tasks>
             </configuration>
             <goals>
@@ -414,6 +416,7 @@
       <id>oracle</id>
       <properties>
         <db.profile>oracle</db.profile>
+        <jndiReferenceName>jdbc/uvms_spatial</jndiReferenceName>		
       </properties>
       <dependencies>
         <dependency>
