@@ -10,7 +10,7 @@
   <connectionParameters>
     <entry key="dbtype">oracle</entry>
     <entry key="Geometry metadata table">GEOMETRY_COLUMNS</entry>
-    <entry key="jndiReferenceName">java:jboss/datasources/uvms_spatial</entry>
+    <entry key="jndiReferenceName">@jndiReferenceName@</entry>
     <entry key="namespace">http://unionvms.eu/uvms</entry>
     <entry key="schema">SPATIAL</entry>
     <entry key="Loose bbox">true</entry>
