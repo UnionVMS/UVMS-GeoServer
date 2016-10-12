@@ -3,6 +3,7 @@
      <wls:container-descriptor>
 		<prefer-application-packages>
 		  <package-name>com.google.common.*</package-name>
-		</prefer-application-packages>		
+		</prefer-application-packages>	
+		<show-archived-real-path-enabled>true</show-archived-real-path-enabled>		
      </wls:container-descriptor>
 </wls:weblogic-web-app>
