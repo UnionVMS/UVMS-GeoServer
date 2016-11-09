@@ -14,7 +14,9 @@
  <name>GeoServer</name>
 
  <scm>
-  <developerConnection>scm:svn:https://webgate.ec.europa.eu/CITnet/svn/UNIONVMS/trunk/geoserver/</developerConnection>
+   <connection>scm:git:https://emserveje@webgate.ec.europa.eu/CITnet/stash/scm/unionvms/uvms-geoserver.git</connection>
+   <developerConnection>scm:git:https://emserveje@webgate.ec.europa.eu/CITnet/stash/scm/unionvms/uvms-geoserver.git</developerConnection>
+   <url>https://emserveje@webgate.ec.europa.eu/CITnet/stash/scm/unionvms/</url>
  </scm>
 
  <organization>
