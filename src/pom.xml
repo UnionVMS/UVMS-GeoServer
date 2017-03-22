@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- 
+<!-- ???
  Copyright (C) 2014 - Open Source Geospatial Foundation. All rights reserved.
  This code is licensed under the GPL 2.0 license, available at the root
  application directory.
@@ -14,9 +14,8 @@
  <name>GeoServer</name>
 
  <scm>
-   <connection>scm:git:https://emserveje@webgate.ec.europa.eu/CITnet/stash/scm/unionvms/uvms-geoserver.git</connection>
-   <developerConnection>scm:git:https://emserveje@webgate.ec.europa.eu/CITnet/stash/scm/unionvms/uvms-geoserver.git</developerConnection>
-   <url>https://emserveje@webgate.ec.europa.eu/CITnet/stash/scm/unionvms/</url>
+  <connection>scm:git:https://github.com/UnionVMS/UVMS-RulesModule-APP.git</connection>
+  <tag>HEAD</tag>
  </scm>
 
  <organization>
@@ -1449,24 +1448,15 @@
    </plugin>
 
    <plugin>
-    <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-release-plugin</artifactId>
-    <version>${maven.release.plugin.version}</version>
+    <version>${maven-release-plugin}</version>
     <dependencies>
      <dependency>
-      <groupId>com.google.code.maven-scm-provider-svnjava</groupId>
-      <artifactId>maven-scm-provider-svnjava</artifactId>
-      <version>${maven.scm.provider.version}</version>
+      <groupId>org.apache.maven.scm</groupId>
+      <artifactId>maven-scm-provider-gitexe</artifactId>
+      <version>1.8.1</version>
      </dependency>
     </dependencies>
-    <configuration>
-     <providerImplementations>
-      <svn>javasvn</svn>
-     </providerImplementations>
-     <tagBase>https://webgate.ec.europa.eu/CITnet/svn/UNIONVMS/tags/geoserver</tagBase>
-     <tagNameFormat>@{project.artifactId}-@{project.version}</tagNameFormat>
-     <autoVersionSubmodules>true</autoVersionSubmodules>
-    </configuration>
    </plugin>
   </plugins>
 
@@ -1606,14 +1596,14 @@
 
  <distributionManagement>
   <repository>
-   <id>digit-releases</id>
-   <name>DG DIGIT Repository</name>
-   <url>https://webgate.ec.europa.eu/CITnet/nexus/content/repositories/mare/</url>
+   <id>focus-releases</id>
+   <name>UnionVms Repository</name>
+   <url>http://nexus.focus.fish/nexus/content/repositories/releases/</url>
   </repository>
   <snapshotRepository>
-   <id>digit-snapshots</id>
-   <name>DG DIGIT Snapshot Repository</name>
-   <url>https://webgate.ec.europa.eu/CITnet/nexus/content/repositories/mare-snapshots/</url>
+   <id>focus-snapshots</id>
+   <name>UnionVms Snapshot Repository</name>
+   <url>http://nexus.focus.fish/nexus/content/repositories/snapshots/</url>
   </snapshotRepository>
  </distributionManagement>
 
@@ -1672,6 +1662,7 @@
   <hibernate-spatial-h2-version>1.1.1</hibernate-spatial-h2-version>
   <maven.release.plugin.version>2.5.2</maven.release.plugin.version>
   <maven.scm.provider.version>2.1.1</maven.scm.provider.version>
+  <maven-release-plugin>2.5.3</maven-release-plugin>
  </properties>
 
  <profiles>
