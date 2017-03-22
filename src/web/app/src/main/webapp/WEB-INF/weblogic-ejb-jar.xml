@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<weblogic-ejb-jar>
+  <weblogic-enterprise-bean>
+    <ejb-name>DefaultJwtTokenHandler</ejb-name>
+    <local-jndi-name>DefaultJwtTokenHandler</local-jndi-name>
+  </weblogic-enterprise-bean>
+</weblogic-ejb-jar>
