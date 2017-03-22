@@ -1,12 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ejb-jar xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/ejb-jar_3_0.xsd">
-  <enterprise-beans>
+<ejb-jar xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/ejb-jar_3_1.xsd"
+         version="3.1">
+<enterprise-beans>
   <session>
-  <ejb-name>JwtTokenHandler</ejb-name>
-  <business-remote>eu.europa.ec.mare.usm.jwt.JwtTokenHandler</business-remote>
-  <ejb-class>eu.europa.ec.mare.usm.jwt.DefaultJwtTokenHandler</ejb-class>
-  <session-type>Singleton</session-type>  
-  <transaction-type>Container</transaction-type>
+	  <ejb-name>JwtTokenHandler</ejb-name>
+	  <business-remote>eu.europa.ec.mare.usm.jwt.JwtTokenHandler</business-remote>
+	  <ejb-class>eu.europa.ec.mare.usm.jwt.DefaultJwtTokenHandler</ejb-class>
+	  <session-type>Singleton</session-type>  
+	  <transaction-type>Container</transaction-type>
   </session>  
+
+  
   </enterprise-beans>
 </ejb-jar>
