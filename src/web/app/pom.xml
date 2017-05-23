@@ -9,12 +9,12 @@
   <parent>
     <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
     <artifactId>web</artifactId>
-    <version>2.8.5-SNAPSHOT</version>
+    <version>2.8.5.presweden1</version>
   </parent>
   <groupId>eu.europa.ec.fisheries.uvms.geoserver.web</groupId>
   <artifactId>gs-web-app</artifactId>
   <packaging>jar</packaging>
-  <version>2.8.5-SNAPSHOT</version>
+  <version>2.8.5.presweden1</version>
   <name>GeoServer Web Application</name>    
   <dependencies>  
     <dependency>
@@ -212,10 +212,10 @@
 
 			  <!-- copy the files from the config dir to the webapp dir -->
 			  <echo message="Copying data dir from ${configDirectory}/${configId}" />
-			  <copy todir="${webappSourceDirectory}/data" >
+			  <copy todir="${webappSourceDirectory}/data">
 				 <fileset dir="${configDirectory}/${configId}" includes="**/**" />
 			  </copy>
-			  <replace file="${webappSourceDirectory}/data/workspaces/uvms/uvmsdb/datastore.xml" token="@jndiReferenceName@" value="${jndiReferenceName}"/> 
+			  <replace file="${webappSourceDirectory}/data/workspaces/uvms/uvmsdb/datastore.xml" token="@jndiReferenceName@" value="${jndiReferenceName}" /> 
   
               </tasks>
             </configuration>
@@ -345,7 +345,7 @@
 
   <properties>
     <configDirectory>${basedir}/../../../data</configDirectory>
-    <containerConfDirectory></containerConfDirectory>
+    <containerConfDirectory />
     <webappSourceDirectory>${basedir}/src/main/webapp</webappSourceDirectory>
     <sde.version>9.3</sde.version>
     <jetty.port>8080</jetty.port>
