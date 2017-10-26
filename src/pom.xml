@@ -1444,6 +1444,17 @@
    <!-- website -->
    <plugin>
     <artifactId>maven-site-plugin</artifactId>
+    <configuration>
+          <reportPlugins>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-javadoc-plugin</artifactId>
+              <configuration>
+                <additionalparam>${javadoc.opts}</additionalparam>
+              </configuration>
+            </plugin>
+          </reportPlugins>
+        </configuration>
    </plugin>
 
    <!-- ======================================================= -->
@@ -1455,6 +1466,17 @@
      <source>1.7</source>
      <version>false</version>
      <noqualifier>all</noqualifier>
+     <executions>
+            <execution>
+                <id>attach-javadocs</id>
+                <goals>
+                    <goal>jar</goal>
+                </goals>
+                <configuration>
+                    <additionalparam>${javadoc.opts}</additionalparam>
+                </configuration>
+            </execution>
+        </executions>
      <quiet>true</quiet>
      <maxmemory>256M</maxmemory>
      <encoding>UTF-8</encoding>
@@ -1626,6 +1648,15 @@
 
  <profiles>
   <!-- uml graphing -->
+  <profile>
+    <id>java8-doclint-disabled</id>
+    <activation>
+      <jdk>[1.8,)</jdk>
+    </activation>
+    <properties>
+      <javadoc.opts>-Xdoclint:none</javadoc.opts>
+    </properties>
+  </profile>
   <profile>
    <id>uml</id>
    <activation>
