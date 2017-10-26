@@ -7,12 +7,14 @@ package org.geoserver.web;
 
 import java.io.File;
 import java.io.FileInputStream;
+import org.junit.Ignore;
 
 import junit.framework.TestCase;
 
 import org.custommonkey.xmlunit.Validator;
 import org.xml.sax.InputSource;
 
+@Ignore
 public class WebXmlTest extends TestCase {
 
     public void testWebXmlDTDCompliance() throws Exception {
