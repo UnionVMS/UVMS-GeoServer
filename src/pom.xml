@@ -1451,6 +1451,7 @@
               <artifactId>maven-javadoc-plugin</artifactId>
               <configuration>
                 <additionalparam>${javadoc.opts}</additionalparam>
+                <additionalparam>-Xdoclint:none</additionalparam>
               </configuration>
             </plugin>
           </reportPlugins>
@@ -1474,6 +1475,7 @@
                 </goals>
                 <configuration>
                     <additionalparam>${javadoc.opts}</additionalparam>
+                    <additionalparam>-Xdoclint:none</additionalparam>
                 </configuration>
             </execution>
         </executions>
@@ -1669,6 +1671,7 @@
      <plugin>
       <artifactId>maven-javadoc-plugin</artifactId>
       <configuration>
+      <additionalparam>-Xdoclint:none</additionalparam>
        <doclet>gr.spinellis.umlgraph.doclet.UmlGraphDoc</doclet>
        <docletArtifact>
         <groupId>gr.spinellis</groupId>
