@@ -18,12 +18,12 @@
  <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>
  <artifactId>geoserver</artifactId>
  <packaging>pom</packaging>
- <version>2.8.8-SNAPSHOT</version>
+ <version>2.8.8</version>
  <name>GeoServer</name>
 
  <scm>
   <connection>scm:git:https://github.com/UnionVMS/UVMS-GeoServer.git</connection>
-  <tag>HEAD</tag>
+  <tag>geoserver-2.8.8</tag>
  </scm>
 
  <organization>
@@ -1614,7 +1614,7 @@
   <scm.url>scm:git:https://github.com/UnionVMS/UVMS-GeoServer.git</scm.url>
  
  
-  <gs.version>2.8.8-SNAPSHOT</gs.version>
+  <gs.version>2.8.8</gs.version>
   <gt.version>14.3</gt.version>
   <gwc.version>1.8.2</gwc.version>
   <spring.version>3.1.4.RELEASE</spring.version>
