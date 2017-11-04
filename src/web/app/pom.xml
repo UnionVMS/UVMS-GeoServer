@@ -191,7 +191,7 @@
 	<dependency>
 		<groupId>eu.europa.ec.fisheries.uvms</groupId>
 		<artifactId>usm4uvms</artifactId>
-		<version>3.0.4</version>
+		<version>4.0.2-SNAPSHOT</version>
 	</dependency>
   </dependencies>
   <build>
@@ -434,7 +434,7 @@
             <artifactId>maven-war-plugin</artifactId>
             <version>2.3</version>
             <configuration>
-              <!--<warName>geoserver-${db.profile}</warName>-->
+              <warName>geoserver-${db.profile}</warName>
               <webappDirectory>${project.build.directory}/geoserver</webappDirectory>
               <packagingExcludes>WEB-INF/lib/servlet-api*.jar</packagingExcludes>
               <classifier>${db.profile}</classifier>
