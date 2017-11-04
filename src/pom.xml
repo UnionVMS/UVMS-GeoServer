@@ -594,7 +594,7 @@
    </dependency>
 
    <dependency>
-    <groupsId>org.wkb4j</groupId>
+    <groupId>org.wkb4j</groupId>
     <artifactId>wkb4j</artifactId>
     <version>1.0-RC1</version>
    </dependency>
