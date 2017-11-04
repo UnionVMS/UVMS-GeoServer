@@ -53,6 +53,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.junit.Ignore;
 
 import static org.geoserver.data.test.CiteTestData.STREAMS;
 import static org.junit.Assert.*;
@@ -165,6 +166,7 @@ public class RenderedImageMapOutputFormatTest extends WMSTestSupport {
     }
     
     @Test
+    @Ignore
     public void testTimeoutOption() throws Exception {
         Catalog catalog = getCatalog();
         GetMapRequest request = new GetMapRequest();
