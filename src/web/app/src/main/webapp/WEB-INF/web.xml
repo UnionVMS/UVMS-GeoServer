@@ -191,6 +191,10 @@
         <filter-name>AuthenticationFilter</filter-name>
         <url-pattern>/gwc</url-pattern>
     </filter-mapping>
+    <filter-mapping>
+        <filter-name>AuthenticationFilter</filter-name>
+        <url-pattern>/uvms</url-pattern>
+    </filter-mapping>
 
     <!--
       THIS FILTER MUST BE THE FIRST ONE, otherwise we end up with ruined chars in the input from the GUI
