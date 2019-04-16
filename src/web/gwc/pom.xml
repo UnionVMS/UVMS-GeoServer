@@ -11,13 +11,13 @@
   <parent>
     <groupId>eu.europa.ec.fisheries.uvms.geoserver</groupId>    
     <artifactId>web</artifactId>
-    <version>2.8.8-SE-SNAPSHOT</version>
+    <version>2.8.8-SE</version>
   </parent>
 
   <groupId>eu.europa.ec.fisheries.uvms.geoserver.web</groupId>
   <artifactId>gs-web-gwc</artifactId>
   <packaging>jar</packaging>
-  <version>2.8.8-SE-SNAPSHOT</version>
+  <version>2.8.8-SE</version>
   <name>GWC UI Module</name>
   
   <dependencies>
