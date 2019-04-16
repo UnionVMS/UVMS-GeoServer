@@ -191,7 +191,7 @@
 	<dependency>
 		<groupId>eu.europa.ec.fisheries.uvms</groupId>
 		<artifactId>usm4uvms</artifactId>
-		<version>4.0.11</version>
+		<version>4.0.16</version>
 	</dependency>
   </dependencies>
   <build>
